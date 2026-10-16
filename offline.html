@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オフラインです</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      background: #f5f5f5 url("images/washi-light.png");
+      background-size: cover;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.55); /* 黒ガラス */
+      backdrop-filter: blur(12px);
+      padding: 28px;
+      border-radius: 16px;
+      max-width: 360px;
+      margin: 0 auto;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .text {
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      margin-top: 24px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #0A84FF; /* 青い旅のテーマカラー */
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="title">オフラインです</div>
+    <div class="text">
+      現在ネットワークに接続されていません。<br>
+      接続を確認して、再度アクセスしてください。
+    </div>
+
+    <a href="index.html" class="btn">トップページへ戻る</a>
+  </div>
+
+</body>
+</html>

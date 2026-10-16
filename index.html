@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#4a4a4a">
+    <meta name="description" content="四国八十八ヶ所を知る">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Shippori+Mincho:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>四国八十八ヶ所巡礼</title>
+</head>
+
+<body class="home-page">
+    <div id="screen-home">
+
+        <section class="hero-photo">
+
+            <div class="mobile-header">
+                <div class="mobile-icon">八十八</div>
+
+                <h1 class="mobile-title"></h1>
+
+                <div id="menu" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="washi-overlay">
+                    <h1 class="hero-title">
+                        大師とともに<br>四国を旅する<br>八十八の道
+                    </h1>
+                </div>
+            </div>
+
+        </section>
+
+        <button id="show-map-btn" class="map-open-btn">
+            <svg class="map-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8.7 2 6 4.7 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.3-2.7-6-6-6z" />
+                <circle cx="12" cy="8" r="2.5" />
+            </svg>
+            巡礼地図を見る
+            <span class="label-en">Open Pilgrimage Map</span>
+        </button>
+        <div id="menu-content" class="menu-content pc-nav">
+            <a class="nav-tokushima">徳島県
+                <span class="label-en">Tokushima</span>
+            </a>
+            <a class="nav-kochi">高知県
+                <span class="label-en">Kochi</span>
+            </a>
+            <a class="nav-ehime">愛媛県
+                <span class="label-en">Ehime</span>
+            </a>
+            <a class="nav-kagawa">香川県
+                <span class="label-en">Kagawa</span>
+            </a>
+            <a class="nav-manner">参拝マナー
+                <span class="label-en">Manners</span>
+            </a>
+        </div>
+
+
+        <!-- スマホ専用 下部ナビ -->
+        <div class="mobile-bottom-nav">
+            <a class="nav-tokushima">徳島県
+                <span class="label-en">Tokushima</span>
+            </a>
+            <a class="nav-kochi">高知県
+                <span class="label-en">Kochi</span>
+            </a>
+            <a class="nav-ehime">愛媛県
+                <span class="label-en">Ehime</span>
+            </a>
+            <a class="nav-kagawa">香川県
+                <span class="label-en">Kagawa</span>
+            </a>
+            <a class="nav-manner">参拝マナー
+                <span class="label-en">Manners</span>
+            </a>
+        </div>
+
+
+
+        <section class="map-section">
+            <h2 class="map-title">巡礼地図
+                <span class="label-en">Junrei Map</span>
+            </h2>
+            <div class="map-container">
+                <img src="images/overview-map-01.png">
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- フルスクリーン地図（モーダル） -->
+    <div class="fullscreen-map" style="display:none;">
+        <button id="close-map-btn" class="map-close-btn">閉じる
+            <span class="label-en">Close</span>
+        </button>
+
+        <h2 class="map-title">巡礼地図
+            <span class="label-en">Pilgrimage Map</span>
+        </h2>
+
+        <div class="map-container">
+            <img src="images/overview-map-01.png" alt="巡礼地図">
+        </div>
+
+        <div class="kakejiku">
+            <div class="kakejiku-text">
+                <h3 class="kakejiku-title">四国遍路の魅力</h3>
+                <span class="kakejiku-en">Shikoku Pilgrimage Highlights</span>
+                <p>
+                    <strong>総距離は約1,200km</strong>。歩き遍路は約50日前後が一般的です。
+                    <span class="kakejiku-en">Distance: Approx. 1,200km (about 50 days on foot)</span>
+                </p>
+
+                <p>
+                    <strong>外国人巡礼者が増えている背景</strong>：SNSや動画で紹介され、長期休暇で歩ける安全な巡礼として人気があります。
+                    <span class="kakejiku-en">Why more visitors: Social media exposure and safe long-distance
+                        travel</span>
+                </p>
+
+                <p>
+                    <strong>八十八ヶ所巡りの達成感</strong>：歴史・文化・自然を体験しながら、旅の終わりに強い充実感が得られます。
+                    <span class="kakejiku-en">Achievement: Completing 88 temples brings deep fulfillment</span>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- 一覧画面を読み込む枠 -->
+    <div id="screen-list" style="display:none;"></div>
+
+    <!-- 詳細画面を読み込む枠 -->
+    <div id="screen-detail" style="display:none;"></div>
+    <script src="script.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then(reg => {
+                        console.log("Service Worker registered:", reg);
+                    })
+                    .catch(err => {
+                        console.log("Service Worker registration failed:", err);
+                    });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
