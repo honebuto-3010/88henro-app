@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* ===========================
+   基本設定（和紙背景＋黒文字）
+=========================== */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/istockphoto-2212312898-612x612.jpg);
+    background-repeat: repeat;
+    background-size: 600px;
+    background-color: transparent;
+
+    color: #222; /* 日本語は黒へ */
+    font-family: "Yuji Syuku", serif;
+    line-height: 1.8;
+}
+
+/* ===========================
+   ヘッダー（白背景）
+=========================== */
+.mag-header {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+}
+
+.mag-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #222;
+}
+
+.mag-header h2 .label-en {
+    display: block;
+    margin-top: 10px;
+    font-family: "EB Garamond", "Noto Serif", serif;
+    font-size: 1.2rem;
+    color: #003366; /* 英語は濃紺へ */
+}
+
+/* ===========================
+   記事ブロック（白カード）
+=========================== */
+.mag-article {
+    margin: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.2rem;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid #ff4d00;
+    border-radius: 12px;
+}
+
+/* ===========================
+   見出し（朱色＋白背景）
+=========================== */
+.ng-title {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem;
+    padding: 0.9rem 1rem 0.9rem 2.6rem;
+    background: #ffffff;
+    border-left: 4px solid #ff4d00;
+    border-radius: 10px;
+    position: relative;
+    color: #222;
+}
+
+.ng-title::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #ff4d00;
+}
+
+.ng-title span {
+    background: #fbe3d3;
+    color: #ff4d00;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 0.9rem;
+}
+
+.ng-title .label-en {
+    display: block;
+    margin-top: 6px;
+    font-family: "Noto Serif", "EB Garamond", serif;
+    font-size: 1.2rem;
+    color: #003366; /* 英語は濃紺へ */
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.ng-icon {
+    color: #ffcc00; /* ← 黄色に変更 */
+}
+
+/* ===========================
+   本文テキスト（白カード）
+=========================== */
+.mag-text {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    color: #222;
+    padding: 1rem 1.2rem;
+}
+
+.mag-text .label-en {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #003366;
+    line-height: 1.6;
+}
+
+.mag-text strong {
+    color: #ff4d00;
+}
+
+/* ===========================
+   戻るボタン（白カード）
+=========================== */
+.btn-back-home {
+    display: block;
+    width: 50%;
+    margin: 2rem auto 0;
+    padding: 14px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    color: #222;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-back-home:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.btn-back-home .label-en {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #003366;
+    font-family: "EB Garamond", "Noto Serif", serif;
+}
+/* ===========================
+   スマホ最適化（599px以下）
+=========================== */
+@media (max-width: 599px) {
+
+    .mag-header {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .mag-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .mag-header h2 .label-en {
+        font-size: 1rem;
+    }
+
+    .mag-article {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .ng-title {
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem 0.8rem 2.4rem;
+    }
+
+    .ng-title .label-en {
+        font-size: 1rem;
+    }
+
+    .mag-text {
+        font-size: 0.95rem;
+        padding: 0.9rem 1rem;
+    }
+
+    .mag-text .label-en {
+        font-size: 0.95rem;
+    }
+
+    .btn-back-home {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
+
