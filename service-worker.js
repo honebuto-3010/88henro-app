@@ -15,14 +15,20 @@ const STATIC_FILES = [
   "script.js",
 
   // CSS
-  "css/base.css",
-  "css/temple.css",
-  "css/washi.css",
+  "css/style.css",
+  "css/manner.css",
+  "css/tokushima.css",
+  "css/kochi.css",
+  "css/ehime.css",
+  "css/kagawa.css",
+  "css/style-icon.css",
 
   // 画像
-  "images/washi-light.png",
-  "images/washi-dark.png",
-  "images/hero.jpg",
+  "blue-192-icon.png",
+  "blue-512-icon.png",
+  "blue-icon.jpg",
+  "isstockphoto-1150481340-612×612.jpg",
+  "overview-map-01.png",
 
   // 県別アイコンページ（SPAで必要）
   "icon/tokushima.html",
