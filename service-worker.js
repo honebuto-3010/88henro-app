@@ -27,7 +27,7 @@ const STATIC_FILES = [
   "192-icon.png",
   "512-icon.png",
   "180-icon.jpg",
-  "istockphoto-1150481340-612×612.jpg",
+  "istockphoto-1150481340-612✕612.jpg",
   "overview-map-01.png",
 
   // 県別アイコンページ（SPAで必要）
