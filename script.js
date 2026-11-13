@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ".nav-kagawa": "icon/kagawa-icon.html",
         ".nav-ehime": "icon/ehime-icon.html",
         ".nav-kochi": "icon/kochi-icon.html",
-        ".nav-manner": "manner/manner.html"
+        ".nav-manner": "manner.html"
     };
 
     // PC用リンク + スマホ用リンクの両方にイベント付け
