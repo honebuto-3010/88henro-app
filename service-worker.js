@@ -31,10 +31,10 @@ const STATIC_FILES = [
   "overview-map-01.png",
 
   // 県別アイコンページ（SPAで必要）
-  "icon/tokushima.html",
-  "icon/kagawa.html",
-  "icon/ehime.html",
-  "icon/kochi.html"
+  "icon/tokushima-icon.html",
+  "icon/kagawa-icon.html",
+  "icon/ehime-icon.html",
+  "icon/kochi-icon.html"
 ];
 
 // 88ヶ所の札所ページを自動生成して追加
