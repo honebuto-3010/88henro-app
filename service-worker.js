@@ -24,9 +24,9 @@ const STATIC_FILES = [
   "css/style-icon.css",
 
   // 画像
-  "blue-192-icon.png",
-  "blue-512-icon.png",
-  "blue-icon.jpg",
+  "192-icon.png",
+  "512-icon.png",
+  "180-icon.jpg",
   "isstockphoto-1150481340-612×612.jpg",
   "overview-map-01.png",
 
