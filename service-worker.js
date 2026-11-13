@@ -39,12 +39,12 @@ const STATIC_FILES = [
 ];
 
 // 88ヶ所の札所ページを自動生成して追加
-for (const [pref, count] of Object.entries(TEMPLE_COUNTS)) {
+/*for (const [pref, count] of Object.entries(TEMPLE_COUNTS)) {
   for (let i = 1; i <= count; i++) {
     const num = String(i).padStart(2, "0");
     STATIC_FILES.push(`${pref}/${num}.html`);
   }
-}
+} */
 
 // インストール（静的ファイルをキャッシュ）
 self.addEventListener("install", event => {
