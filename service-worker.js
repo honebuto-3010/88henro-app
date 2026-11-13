@@ -26,7 +26,7 @@ const STATIC_FILES = [
   // 画像
   "192-icon.png",
   "512-icon.png",
-  "180-icon.jpg",
+  "180-icon.png",
   "istockphoto-1150481340-612x612.jpg",
   "overview-map-01.png",
 
