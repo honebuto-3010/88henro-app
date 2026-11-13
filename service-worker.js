@@ -1,4 +1,4 @@
-const CACHE_NAME = "junrei-v2";
+const CACHE_NAME = "henro-v2";
 
 // 県ごとの札所数
 const TEMPLE_COUNTS = {
