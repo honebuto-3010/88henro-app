@@ -5,7 +5,7 @@ html, body { overflow-x: hidden; }
 * { box-sizing: border-box; }
 
 body {
-    background-image: url(istockphoto-1150481340-612x612.jpg);
+    background-image: url(/istockphoto-1150481340-612x612.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
