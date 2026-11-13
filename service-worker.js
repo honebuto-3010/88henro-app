@@ -1,4 +1,4 @@
-const CACHE_NAME = "junrei-v4";
+const CACHE_NAME = "junrei-v5";
 
 // 県ごとの札所数
 const TEMPLE_COUNTS = {
@@ -10,6 +10,7 @@ const TEMPLE_COUNTS = {
 
 // 静的ファイル（共通）
 const STATIC_FILES = [
+  "./",
   "index.html",
   "manifest.json",
   "script.js",
